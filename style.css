@@ -21,6 +21,7 @@ body {
   height: 650px;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .grid-container {
@@ -31,4 +32,19 @@ body {
   align-self: center;
   flex-wrap: wrap;
   margin-left: 200px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.slider {
+  width: 200px;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

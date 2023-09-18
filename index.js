@@ -1,6 +1,17 @@
 gridContainer = document.querySelector(".grid-container");
 
-let userInputResult = 50;
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.textContent = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function () {
+  output.textContent = this.value;
+  changeGrid(this.value);
+};
+
+let userInputResult = output.textContent;
+
 const createGrid = () => {
   // i need to make a 16 x 16 grid of squares divs. Use a loop to create 16 divs inside the grid container
   // each iteration will make a div with name gridBox(i)
@@ -15,4 +26,4 @@ const createGrid = () => {
   }
 };
 
-createGrid();
+const changeGridSize = ()
